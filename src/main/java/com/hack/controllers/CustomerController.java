@@ -19,9 +19,8 @@ public class CustomerController {
 	}
 
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
-	public String getDefaultMovie(ModelMap model) {
+	public String getDefaultMovie() {
 
-		model.addAttribute("movie", "this is default movie");
 		return "Hello World";
 
 	}
