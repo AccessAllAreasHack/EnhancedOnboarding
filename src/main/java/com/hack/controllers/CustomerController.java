@@ -19,6 +19,8 @@ public class CustomerController {
 		acct.setSortcode("20-16-16");
 		acct.setAccountNumber("57869865");
 		acct.setPin("2668");
+		acct.setBalance("100");
+		acct.setCardHolder("Joe Vincent");
 		return acct;
 
 	}

@@ -46,7 +46,7 @@ public class ProspectController {
 		PersonalDetailsBean p = new PersonalDetailsBean();
 		NameBean name = new NameBean();
 		name.setFirstName("Joe");
-		name.setFirstName("Matt");
+		name.setFirstName("Vincent");
 		p.setName(name);
 		p.setDateofBirth("30-May-1992");
 		AddressBean a = new AddressBean();

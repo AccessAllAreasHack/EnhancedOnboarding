@@ -2,6 +2,8 @@ package com.hack.bean;
 
 public class AccountBean {
 
+	private String cardHolder;
+	private String balance;
 	private String cardNumber;
 	private String sortcode;
 	private String accountNumber;
@@ -30,5 +32,16 @@ public class AccountBean {
 	public void setPin(String pin) {
 		this.pin = pin;
 	}
-
+	public String getCardHolder() {
+		return cardHolder;
+	}
+	public void setCardHolder(String cardHolder) {
+		this.cardHolder = cardHolder;
+	}
+	public String getBalance() {
+		return balance;
+	}
+	public void setBalance(String balance) {
+		this.balance = balance;
+	}
 }
