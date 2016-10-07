@@ -164,6 +164,17 @@ margin-left:280px;  display: inline-block;
   background-color:#3CBC8D;
   color:white;
 }
+.success {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+color: #4F8A10;
+background-color: #DFF2BF;
+
+}
+
 input[type=text]#myInp {
     width: 130px;
     box-sizing: border-box;
@@ -187,37 +198,51 @@ input[type=text]#myInp:focus {width: 100%;}
 <a target="_blank" href="javascript:generate();" class="button">Register</a>
 </div>
 <div id="contact" style="display:none; border-radius:5px;border-style:solid;background-color:#ffffff;padding:40px;width:500px;border-color:blue;">
- <label for="number" >Your contact number: </label><input type="text" id="number" value="07483833777"/>  <br/>
- <label for="mail" >Your mail ID: </label><input type="text" id="mail" value="joe.m@gmail.com"/>  <br/>
+ <table>
+ 	<tr><td><label for="number" >Your contact number: </label></td>
+ 	<td><input type="text" id="number" value="07483833777"/> </td></tr>
+ 	<tr><td><label for="mail" >Your mail ID: </label></td>
+ 	<td><input type="text" id="mail" value="joe.m@gmail.com"/>  </td>
+    </tr>
+ </table>
 <a target="_blank" href="javascript:savecontact();" class="button">Next</a>
 </div>
 <div id="person" style="display:none;border-radius:5px;border-style:solid;background-color:#ffffff;padding:40px;width:500px;border-color:blue;">
-Contact Details saved Successfully<br/><br/>
-<label for="number" >First Name</label> <input type="text" id="fName" value="Joe"/><br/> 
-<label for="number" >Last Name</label><input type="text" id="lname" value="Matt"/><br/> 
-<label for="number" >Date Of Birth</label><input type="text" id="dob" value="30-May-1992"/> <br/> 
-<label for="number" >House Number</label><input type="text" id="house"/><br/>  
-<label for="number" >Post Code</label><input type="text" id="postcode"/><br/>  
-<label for="number" >Living Since? </label><input type="text" id="years"/><br/> 
+<div class="success">Contact Details saved Successfully<br/><br/></div>
+<table>
+<tr><td><label for="number" >First Name</label></td><td> <input type="text" id="fName" value="Joe"/></td> </tr>
+<tr><td><label for="number" >Last Name</label></td><td><input type="text" id="lname" value="Matt"/></td> </tr>
+<tr><td><label for="number" >Date Of Birth</label></td><td><input type="text" id="dob" value="30-May-1992"/> </td> </tr>
+<tr><td><label for="number" >House Number</label></td><td><input type="text" id="house"/></td>  </tr>
+<tr><td><label for="number" >Post Code</label></td><td><input type="text" id="postcode"/></td> </tr>
+<tr><td><label for="number" >Living Since? </label></td><td><input type="text" id="years"/></td></tr>
+</table>
 <a target="_blank" href="javascript:saveperson();" class="button">Next</a>
 </div>
 <div id="income" style="display:none;border-radius:5px;border-style:solid;background-color:#ffffff;padding:40px;width:500px;border-color:blue;">
-Personal Details saved Successfully<br/><br/>
-<label for="number" >Employer :</label> <input type="text" id="employer" value="ABC Corp"/><br/>
-<label for="number" >Salary :</label> <input type="text" id="salary"/> <br/>
+<div class="success">Personal Details saved Successfully<br/><br/></div>
+
+<table>
+<tr><td><label for="number" >Employer :</label> </td><td><input type="text" id="employer" value="ABC Corp"/></td></tr>
+<tr><td><label for="number" >Salary :</label></td><td> <input type="text" id="salary"/> </td></tr>
+</table>
 <a target="_blank" href="javascript:saveIncome();" class="button">Next</a>
 </div>
 <div id="passport" style="display:none;border-radius:5px;border-style:solid;background-color:#ffffff;padding:40px;width:500px;border-color:blue;">
-Employment Details saved Successfully<br/><br/>
-<label for="number" >Upload your passport: </label><br/><br/>
-<input type="file" > <br/> <br/>
+<div class="success">Employment Details saved Successfully<br/><br/></div>
 
-<label for="number" >Upload your DL : </label><br/><br/>
-<input type="file" ><br/><br/>
+<table>
+<tr><td><label for="number" >Upload your Passport: </label></td></tr>
+<tr><td><input type="file" ></td></tr>
+
+<tr><td> &nbsp; </td></tr>
+<tr><td><label for="number" >Upload your Driving Licence : </label><br/><br/>
+<input type="file" ></td></tr>
+</table>
 <a target="_blank" href="javascript:saveDL();" class="button">Next</a>
 </div>
 <div id="complete" style="display:none;border-radius:5px;border-style:solid;background-color:#ffffff;padding:40px;width:500px;border-color:blue;">
-Thanks for registering your interest. Your Phone would be shipped to you shortly.
+<div class="success">Thanks for registering your interest. Your Phone would be shipped to you shortly.</div>
 </div>
 
 </form>
